@@ -28,7 +28,7 @@ A modern, responsive e-commerce product catalog built with Next.js and shadcn/ui
 
 2. Install dependencies:
    ```bash
-   npm install force
+   npm install --force
    ```
 
 3. Run the development server:
