@@ -5,7 +5,6 @@ import ProductCard from "./product-card"
 import type { Product } from "@/lib/types"
 import { Loader2 } from "lucide-react"
 
-// Simulated API endpoint for fetching products
 const API_URL = "/api/products"
 const PRODUCTS_PER_PAGE = 20
 

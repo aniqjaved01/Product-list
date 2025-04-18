@@ -22,7 +22,7 @@ function ProductCard({ product }: ProductCardProps) {
   const handleKeyDown = (e: KeyboardEvent) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault()
-      toggleFavorite(product.id)
+      toggleFavorite(product)
     }
   }
 
@@ -62,7 +62,7 @@ function ProductCard({ product }: ProductCardProps) {
         )}
         <button
           className="absolute top-2 right-2 p-2 bg-white rounded-full shadow-sm z-10 focus:outline-none focus:ring-2 focus:ring-primary"
-          onClick={() => toggleFavorite(product.id)}
+          onClick={() => toggleFavorite(product)}
           onKeyDown={handleKeyDown}
           aria-label={favorite ? "Remove from favorites" : "Add to favorites"}
           tabIndex={0}
